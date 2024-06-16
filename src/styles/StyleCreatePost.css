@@ -1,0 +1,28 @@
+.caption-edit textarea {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d2d2d2;
+    border-radius: 6px;
+}
+.caption-edit textarea::placeholder {
+    font-size: 1.0rem;
+}
+.caption-edit textarea:focus {
+    outline: 1px solid var(--color-primary);
+}
+.caption-edit textarea:focus::placeholder {
+    color: #c2c2c2;
+}
+.caption-edit textarea{
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    margin-top: 15px;
+    border: 1px solid #d2d2d2;
+    border-radius: 6px;
+    resize: none;
+    font-size: 0.8rem;
+}

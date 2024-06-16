@@ -1,0 +1,47 @@
+.branding-profile{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+.branding-profile .photo {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.branding-profile .photo i {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--color-black);
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+    z-index: 2;
+}
+.branding-profile .description {
+    margin-top: 15px;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.branding-profile .photo img {
+    border: 5px solid var(--color-black);
+    border-radius: 50%;
+    transition: filter 0.1s ease-in-out, border 0.1s ease-in-out;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.branding-profile .photo:hover img {
+    filter: blur(2px);
+    cursor: pointer;
+    border: 7px solid var(--color-black);
+}
+.branding-profile .photo:hover i {
+    opacity: 1;
+    cursor: pointer;
+    filter: blur(0.5px);
+}

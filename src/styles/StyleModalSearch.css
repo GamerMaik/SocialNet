@@ -1,0 +1,68 @@
+.panel-modal-container-search{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    background: rgba(45, 45, 45, 0.264);
+    z-index: 100;
+}
+.panel-modal-container-search .panel-modal-search{
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    box-shadow: var(--card-shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 80%;
+    height: 80%;
+}
+.panel-modal-container-search .panel-modal-search .header-modal-search{
+    display: flex;
+    padding: var(--card-padding);
+    border-bottom: 1px solid var(--color-gray);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    background: var(--color-light);
+    border-radius: var(--border-radius);
+}
+.panel-modal-container-search .panel-modal-search .header-modal-search input{
+    display: flex;
+    align-items: center;
+    background: transparent;
+    width: 90%;
+    margin-left: 3rem;
+    font-size: 0.9rem;
+    color: var(--color-dark);
+}
+.panel-modal-container-search .panel-modal-search .header-modal-search input::placeholder{
+    color: var(--color-gray);
+}
+.panel-modal-container-search .panel-modal-search .body-modal-search {
+    padding: var(--card-padding);
+    overflow-y: auto; /* Permitir scroll vertical */
+    flex-grow: 1; /* Permitir que el contenido crezca */
+}
+
+.panel-modal-container-search .panel-modal-search .body-modal-search .images-container-search {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que las imágenes se dispongan en filas */
+    gap: 55px; /* Espacio entre imágenes */
+    justify-content: center; /* Centrar las imágenes horizontalmente */
+}
+
+.panel-modal-container-search .panel-modal-search .body-modal-search .images-container-search img {
+    border-radius: 8px;
+    width: calc(33.33% - 10px); /* Tres imágenes por fila con espacio entre ellas */
+    height: auto;
+    cursor: pointer;
+}
+
+.panel-modal-container-search .panel-modal-search .body-modal-search p {
+    font-size: 20px;
+    font-weight: 500;
+}

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary-color-hue: 252;
+
+    --dark-color-lightness: 17%;
+    --light-color-lightness: 95%;
+    --white-color-lightness: 100%;
+
+    --color-white: hsl(252, 30%, var(--white-color-lightness));
+    --color-light: hsl(252, 30%, var(--light-color-lightness));
+    --color-gray: hsl(var(--primary-color-hue), 15%, 65%);
+    --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
+    --color-secndary: hsl(252, 87%, 81%);
+    --color-success: hsl(120, 89%, 50%);
+    --color-danger: hsl(0, 95%, 65%);
+    --color-dark: hsl(252, 30%, var(--dark-color-lightness));
+    --color-black: hsl(252, 30%, 10%);
+
+    --border-radius:2rem;
+    --card-border-radius:1rem;
+    --btn-padding: 0.6rem 2rem;
+    --search-padding: 0.6rem 1rem;
+    --card-padding:1rem;
+
+    --sticky-top-left:5.4rem;
+    --sticky-top-right:5.4rem;
+
+    /* =====>>  Font Color  <<===== */
+    --f1-color: #fff;
+    --f2-color: #000;
+    --f3-color: rgba(0, 0, 0, 0.8);
+    --f4-color: rgba(0, 0, 0, 0.6);
+    --f5-color: #0099cc;
+    --f6-color: #88cee6;
+
+    /* =====>>  Background Color  <<===== */
+    --bg1-color: #fff;
+    --bg2-color: #000;
+    --bg3-color: #33ccff;
+    --bg4-color: #33cc33;
+    --bg5-color: #0099cc;
+    --bg6-color: rgba(0, 0, 0, 0.4);
+    --bg7-color: rgba(0, 0, 0, 0.2);
+    --glass-bg: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.3)
+    );
+    --C-lg-bg: linear-gradient(45deg, #ff3399, #ff9933);
+
+    /* ===== =====>>  Font Size  <<===== =====  */
+    --xxxl-fs: 2.2rem;
+    --xxl-fs: 1.8rem;
+    --xl-fs: 1.6rem;
+    --l-fs: 1.4rem;
+    --m-fs: 1.2rem;
+    --s-fs: 1.1rem;
+    --xs-fs: 1rem;
+
+    /* =====>>  Margin  <<===== */
+    --m-2-5: 2.5rem;
+    --m-1-8: 1.8rem;
+    --m-1-5: 1.5rem;
+    --m-0-6: 0.6rem;
+    --m-0-5: 0.5rem;
+    --m-0-3: 0.3rem;
+
+    /* =====>>  Padding  <<===== */
+    --p-2-5: 2.5rem;
+    --p-1-5: 1.5rem;
+    --p-1-0: 1rem;
+    --p-0-8: 0.8rem;
+    --p-0-5: 0.5rem;
+    --p-0-4: 0.4rem;
+    --p-0-3: 0.3rem;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    color: var(--color-dark);
+    background: var(--color-light);
+    overflow-x: hidden;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.profile-photo{
+    width: 2.7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+.btn{
+    display: inline-block;
+    padding: var(--btn-padding);
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 100%;
+    background: var(--color-gray);
+    color: var(--color-white);
+
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.btn-primary{
+    background: var(--color-primary);
+    color: white;
+}
+
+.btn-danger{
+    background: var(--color-danger);
+    color: white;
+}
+.btn-edit{
+    background: var( --f6-color);
+    color: white;
+}
+.btn-success{
+    background: var(--color-success);
+    color: white;
+}
+.text-bold{
+    font-weight: 500;
+}
+.text-muted{
+    color: var(--color-gray);
+}
+
+main{
+    position: relative;
+    top: 5.4rem;
+}
+main .container{
+    display: grid;
+    grid-template-columns: 18vw auto 18vw;
+    column-gap: 2rem;
+    position: relative;
+}
+
+.comment-card{
+    display: flex;
+    flex-direction: column;
+}
+.comment{
+    background: var(--color-light);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}

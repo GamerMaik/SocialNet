@@ -1,0 +1,11 @@
+GOOGLE RECAPTCHA
+    - npm i react-google-recaptcha
+
+AXIOS
+    - npm install axios
+
+React Router DOM
+    - npm i react-router-dom
+
+React Lazy Load Image Component
+    - npm i react-lazy-load-image-component

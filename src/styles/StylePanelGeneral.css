@@ -1,0 +1,90 @@
+
+.panel-container{
+    height: max-content;
+    position: sticky;
+    top: var(--sticky-top-right);
+    z-index: 10;
+}
+.panel-container .content{
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+}
+
+.panel-container .contentborder{
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+}
+
+.panel-form{
+    margin-top: 20px;
+}
+.panel-container .content p{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.panel-container .content h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: var(--color-danger);
+}
+.panel-container .content .name-channel{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: var(--card-border-radius);
+    background: var(--color-gray);
+    color: var(--color-white);
+}
+.card-community{
+    cursor: pointer;
+}
+.panel-form input {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d2d2d2;
+    border-radius: 6px;
+}
+textarea::placeholder,
+input::placeholder {
+    font-size: 1.0rem;
+}
+.panel-form textarea:focus,
+.panel-form input:focus {
+    outline: 1px solid var(--color-primary);
+}
+
+.panel-form textarea:focus::placeholder,
+.panel-form input:focus::placeholder {
+    color: #c2c2c2;
+}
+
+.panel-form textarea{
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    margin-top: 15px;
+    border: 1px solid #d2d2d2;
+    border-radius: 6px;
+    resize: none;
+    font-size: 0.8rem;
+}
+.panel-form select{
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d2d2d2;
+    border-radius: 6px;
+}

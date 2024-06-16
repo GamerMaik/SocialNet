@@ -1,0 +1,11 @@
+main .container .right{
+    height: max-content;
+    position: sticky;
+    top: var(--sticky-top-right);
+}
+
+.right .messages{
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+}

@@ -1,0 +1,25 @@
+.right .channels-panel h4{
+    color: var(--color-gray);
+    margin-bottom: 15px;
+    text-align:center;
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    background:var(--color-white);
+}
+.right .channel{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-bottom: 0.7rem;
+}
+
+.right .channel .info{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.right .channel .action{
+    display: flex;
+    gap: 1rem;
+}
